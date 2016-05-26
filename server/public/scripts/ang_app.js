@@ -4,6 +4,7 @@ myApp.controller('APIController', ['$scope', '$http', function($scope, $http) {
   var key = '5433d627c0c62b99a9af9fbbe4227a02';
   var baseURL = 'http://api.petfinder.com/';
   $scope.breed = '';
+  $scope.zip = '';
 
   $scope.getRandomPet = function(species) {
     var query = 'pet.getRandom';
@@ -45,6 +46,8 @@ myApp.controller('APIController', ['$scope', '$http', function($scope, $http) {
       }
     )
   }
+
+
   }]);
 
   myApp.config(['$routeProvider', function($routeProvider) {

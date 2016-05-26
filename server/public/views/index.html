@@ -16,14 +16,16 @@
     <script type="text/javascript" src="/scripts/controllers/catsController.js"></script>
       <script type="text/javascript" src="/scripts/controllers/rabbitsController.js"></script>
         <script type="text/javascript" src="/scripts/controllers/dogsController.js"></script>
-
+    <script type="text/javascript" src="/scripts/controllers/sheltersController.js"></script>
 </head>
 <body ng-app="myApp">
 
     <header ng-include="'/views/templates/header.html'" class="u-full-width"></header>
     <div ng-include="'/views/templates/nav.html'"></div>
-    <div class="container" ng-controller="APIController">
+<div class="container">
         <main ng-view></main>
+</div>
+
 
       <footer ng-include="'/views/templates/footer.html'"></footer>
 </body>

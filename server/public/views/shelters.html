@@ -1,0 +1,37 @@
+<div class="row">
+   <div class="six columns">
+     <label for="zip">Enter zip code</label>
+     <input class="u-full-width" ng-model="zip" type="number" placeholder="ZIP" id="zip">
+     <button ng-click="getShelters()">Get Shelters</button>
+   </div>
+   <div class="six columns">
+   </div>
+ </div>
+ <div class="row">
+    <div class="one column">
+      </div>
+    <div class="ten columns">
+      <table class="u-full-width">
+    <thead>
+      <tr>
+
+        <th>Shelter Name</th>
+        <th>Location</th>
+        <th>Phone</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr ng-repeat="shelter in shelters">
+        <td>{{shelter.name.$t}}</td>
+        <td>{{shelter.email.$t}}</td>
+        <td>{{shelter.phone.$t}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+    </div>
+    <div class="one column">
+    </div>
+  </div>
