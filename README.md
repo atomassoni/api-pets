@@ -1,6 +1,4 @@
-# API Lecture Notes
-PetFinder API implmentations in jQuery and Angular. You need your own API Key!
+# PetFinder API
+Implementations in Angular.
 
-https://www.petfinder.com/developers/api-key
-
-Don't forget to run 'npm install' in your console.
+Find cats, dogs, and rabbits to adopt!
