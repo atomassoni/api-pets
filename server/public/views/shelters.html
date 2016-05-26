@@ -8,9 +8,8 @@
    </div>
  </div>
  <div class="row">
-    <div class="one column">
-      </div>
-    <div class="ten columns">
+
+    <div class="six columns">
       <table class="u-full-width">
     <thead>
       <tr>
@@ -23,7 +22,7 @@
     </thead>
 
     <tbody>
-      <tr ng-repeat="shelter in shelters">
+      <tr ng-repeat="shelter in shelters" ng-click="getPetsFromShelter(shelter.id.$t)">
         <td>{{shelter.name.$t}}</td>
         <td>{{shelter.email.$t}}</td>
         <td>{{shelter.phone.$t}}</td>
@@ -32,6 +31,24 @@
 
   </table>
     </div>
-    <div class="one column">
+    <div class="six columns">
+      <table class="u-full-width">
+    <thead>
+      <tr>
+
+        <th>pet Name</th>
+
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr ng-repeat="pet in pets" ng-click="getPetsFromShelter(shelter.id.$t)">
+        <td>{{pet.name.$t}}</td>
+
+      </tr>
+    </tbody>
+
+  </table>
     </div>
   </div>
