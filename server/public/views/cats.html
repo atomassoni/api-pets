@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="seven columns">
+  <div ng-init="getRandomPet(species)">
+
+  </div>
+  <h2>{{animal.name.$t}}</h2>
+  <img ng-src="{{animal.media.photos.photo[3].$t}}" alt="pet_pictures" />
+  <p>{{animal.description.$t}}</p>
+</div>
+
+<div class="five columns">
+
+
+    <div ng-init="getBreeds()"></div>
+    <h2 ng-if="breeds != undefined">Breeds of {{species}}</h2>
+    <ul>
+      <li ng-repeat="breed in breeds">{{breed.$t}}</li>
+    </ul>
+</div>
+</div>
