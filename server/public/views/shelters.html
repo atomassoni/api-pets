@@ -36,8 +36,8 @@
     <thead>
       <tr>
 
-        <th>pet Name</th>
-
+        <th>Pet Name</th>
+        <th>Animal</th>
 
       </tr>
     </thead>
@@ -45,6 +45,7 @@
     <tbody>
       <tr ng-repeat="pet in pets" ng-click="getPetsFromShelter(shelter.id.$t)">
         <td>{{pet.name.$t}}</td>
+        <td>{{pet.breeds.breed.$t}}</td>
 
       </tr>
     </tbody>
